@@ -2046,13 +2046,6 @@
             },
         },
         {
-            name: "XLM - Stellar",
-            onSelect: function() {
-                network = libs.stellarUtil.dummyNetwork;
-                setHdCoin(148);
-            },
-        },
-        {
             name: "XRP - Ripple",
             onSelect: function() {
                 network = libs.bitcoin.networks.bitcoin;
