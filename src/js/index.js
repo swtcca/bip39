@@ -938,7 +938,7 @@
     function displayBip44Info() {
         // Get the derivation path for the account
         var purpose = parseIntNoNaN(DOM.bip44purpose.val(), 44);
-        var coin = parseIntNoNaN(DOM.bip44coin.val(), 0);
+        var coin = parseIntNoNaN(DOM.bip44coin.val(), 315);
         var account = parseIntNoNaN(DOM.bip44account.val(), 0);
         var path = "m/";
         path += purpose + "'/";
@@ -1143,7 +1143,7 @@
                 // Stellar is different
                 if (networks[DOM.network.val()].name == "XLM - Stellar") {
                     var purpose = parseIntNoNaN(DOM.bip44purpose.val(), 44);
-                    var coin = parseIntNoNaN(DOM.bip44coin.val(), 0);
+                    var coin = parseIntNoNaN(DOM.bip44coin.val(), 315);
                     var path = "m/";
                         path += purpose + "'/";
                         path += coin + "'/" + index + "'";
@@ -1256,7 +1256,7 @@
                 if (isELA()) {
                     let elaAddress = calcAddressForELA(
                         seed,
-                        parseIntNoNaN(DOM.bip44coin.val(), 0),
+                        parseIntNoNaN(DOM.bip44coin.val(), 315),
                         parseIntNoNaN(DOM.bip44account.val(), 0),
                         parseIntNoNaN(DOM.bip44change.val(), 0),
                         index
@@ -2091,7 +2091,7 @@
             return;
         }
 
-        var coin = parseIntNoNaN(DOM.bip44coin.val(), 0);
+        var coin = parseIntNoNaN(DOM.bip44coin.val(), 315);
         var account = parseIntNoNaN(DOM.bip44account.val(), 0);
 
         // Calculate the account extended keys
@@ -2108,7 +2108,7 @@
             return;
         }
 
-        var coin = parseIntNoNaN(DOM.bip44coin.val(), 0);
+        var coin = parseIntNoNaN(DOM.bip44coin.val(), 315);
         var account = parseIntNoNaN(DOM.bip44account.val(), 0);
         var change = parseIntNoNaN(DOM.bip44change.val(), 0);
 
